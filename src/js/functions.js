@@ -101,16 +101,15 @@ export function loopNodesCollectStyles (elements, params) {
   }
 }
 
-export function addHeader (printElement, header, headerStyle) {
+export function addHeader(printElement, header, headerStyle) {
   // Create header element
-  let headerElement = document.createElement('h1')
+  var headerElement = document.createElement('div');
+  headerElement.style.width = "100%";
 
-  // Create header text node
-  let headerNode = document.createTextNode(header)
-
+  headerElement.innerHTML = header;
+  
   // Build and style
-  headerElement.appendChild(headerNode)
-  headerElement.setAttribute('style', headerStyle)
+  headerElement.setAttribute('style', headerStyle);
 
-  printElement.insertBefore(headerElement, printElement.childNodes[0])
+  printElement.insertBefore(headerElement, printElement.childNodes[0]);
 }
