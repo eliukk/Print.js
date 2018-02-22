@@ -3,8 +3,8 @@
   "homepage": "http://printjs.crabbly.com",
   "description": "A tiny javascript library to help printing from the web.",
   "version": "1.0.31",
-  "main": "dist/print.js",
-  "repository": "https://github.com/crabbly/Print.js",
+  "main": "dist/print.min.js",
+  "repository": "https://github.com/eliukk/Print.js",
   "license": "MIT",
   "dependences": {},
   "devDependencies": {
